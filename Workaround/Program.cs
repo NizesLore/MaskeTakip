@@ -63,7 +63,7 @@ foreach (var sehir in yeniSehirler1)
 {
     Console.WriteLine(sehir);
 }
-
+ 
 int sayi1 = 10;
 int sayi2 = 20;
 sayi2 = sayi1;
