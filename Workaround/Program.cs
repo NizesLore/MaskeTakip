@@ -14,6 +14,10 @@
 //Console.WriteLine(amount*0.18);
 //Console.WriteLine(message);
 
+using Business.Concrete;
+using Entities.Concrete;
+
+
 Vatandas vatandas = new Vatandas();
 
 SelamVer("Nizes");
@@ -63,7 +67,25 @@ foreach (var sehir in yeniSehirler1)
 {
     Console.WriteLine(sehir);
 }
- 
+
+
+
+//KPSPublic için person oluşturuldu 060424 c# 2024 bootcamp day1 work 2 video 4:50
+
+Person person = new Person();
+person.FirstName = "NİZES";
+person.LastName = "LORE";
+person.DateOfBirthYear = 1982;
+person.NationalIdentity = 123;
+
+Console.WriteLine(person.DateOfBirthYear);
+
+PttManager pttManager = new PttManager(new PersonManager());
+pttManager.GiveMask(person);
+
+
+
+
 int sayi1 = 10;
 int sayi2 = 20;
 sayi2 = sayi1;
